@@ -24,6 +24,8 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
+    - name: find apk file
+      run: ls -R
     - name: Upload apk
       uses: actions/upload-artifact@v4
       with:
